@@ -1,31 +1,31 @@
 # Base 2 2 the 6
 
 ## Basic Information
-Category: Cryptography  
-Difficulty: Easy  
-Points: 20  
+- **Category**: Cryptography
+- **Difficulty**: Easy
+- **Points**: 20
 
 ## Solving
-The concept of of this challenge is to familiarise yourself with BASE64.
-  
-**Step 1:**  
-You can use online tools such as [CyberChef](https://cyberchef.org/) or [dcode](https://www.dcode.fr/en)  
+The objective of this challenge is to familiarize yourself with BASE64 encoding.
 
-Alternatively, you can use a python script
-```
+**Method 1: Using Online Tools**
+- To decode the BASE64-encoded flag, you can use online tools such as [CyberChef](https://cyberchef.org/) or [dcode](https://www.dcode.fr/en).
+
+**Method 2: Using a Python Script**
+- Alternatively, you can use a Python script to decode the flag:
+```python
 #!/usr/bin/python3
 
 import base64
 
 def main():
-	hexadecimal = "Q1RGe0ZsYWdneVdhZ2d5UmFnZ3l9"
-	print(base64.b64decode(hexadecimal))
+    hexadecimal = "Q1RGe0ZsYWdneVdhZ2d5UmFnZ3l9"
+    print(base64.b64decode(hexadecimal).decode())
 
 main()
 ```
+**Copy and Paste the Flag**
 
-**Step 2:**   
-Copy and paste the flag to complete the challenge  
-```CTF{FlaggyWaggyRaggy}```  
+This challenge provides an opportunity to practice decoding BASE64-encoded messages, a fundamental skill in cryptography and cybersecurity.
 
-**SOLVED**  
+**Challenge Completed**
